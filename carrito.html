@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - MiTienda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>MiTienda</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="busqueda.html">Búsqueda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="shopping-cart">
+            <h1>Carrito de Compras</h1>
+            
+            <div id="carrito-vacio" class="empty-cart-message">
+                <div class="empty-cart-icon"></div>
+                <h2>Tu carrito está vacío</h2>
+                <p>¡Descubre nuestros productos y encuentra algo especial!</p>
+                <a href="catalogo.html" class="btn-continuar-comprando">Descubrir Productos</a>
+            </div>
+            
+            <div id="contenido-carrito" style="display: none;">
+                <table id="tabla-carrito">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Precio Unitario</th>
+                            <th>Cantidad</th>
+                            <th>Subtotal</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpo-carrito">
+                        <!-- Los productos se agregarán dinámicamente aquí -->
+                    </tbody>
+                </table>
+
+                <div id="resumen-carrito" class="cart-summary">
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span id="subtotal-compra">$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Envío:</span>
+                        <span id="envio-compra">$0.00</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total:</span>
+                        <span id="total-compra">$0.00</span>
+                    </div>
+                    <div class="cart-actions">
+                        <a href="catalogo.html" class="btn-seguir-comprando">← Seguir Comprando</a>
+                        <button class="btn-checkout">Proceder al Pago</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 MiTienda. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online - Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>MiTienda</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="busqueda.html">Búsqueda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+    <img src="imagenes/banner.png" alt="Banner promocional" class="banner-image">
+</section>
+        <section class="welcome">
+            <h1>Bienvenido a MiTienda</h1>
+            <p>Tu destino favorito para compras en línea. Ofrecemos los mejores productos al mejor precio.</p>
+        </section>
+
+        <section class="featured-products">
+            <h2>Productos Destacados</h2>
+            <ul class="product-list">
+                <li>📱 Teléfonos Inteligentes</li>
+                <li>💻 Laptops y Computadoras</li>
+                <li>🎧 Audífonos y Audio</li>
+                <li>⌚ Smartwatches</li>
+                <li>🎮 Videojuegos</li>
+            </ul>
+        </section>
+
+        <section class="categories">
+            <h2>Categorías Populares</h2>
+            <ul class="category-list">
+                <li class="category-item" onclick="filtrarCategoria('Electrónica')">Electrónica</li>
+                <li class="category-item" onclick="filtrarCategoria('Hogar y Jardín')">Hogar y Jardín</li>
+                <li class="category-item" onclick="filtrarCategoria('Moda')">Moda</li>
+                <li class="category-item" onclick="filtrarCategoria('Deportes')">Deportes</li>
+                <li class="category-item" onclick="filtrarCategoria('Libros')">Libros</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MiTienda. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

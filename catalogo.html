@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - MiTienda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>MiTienda</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="busqueda.html">Búsqueda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="catalog">
+            <h1>Nuestro Catálogo</h1>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="imagenes/productos/smartphone.png" alt="Smartphone XYZ" class="product-image">
+                    <div class="product-info">
+                        <h3>Smartphone XYZ</h3>
+                        <p class="product-description">Teléfono inteligente con cámara de 48MP y 128GB de almacenamiento</p>
+                        <p class="product-price">$299.99</p>
+                        <button class="btn-agregar-carrito" 
+                                onclick="return agregarAlCarrito('Smartphone XYZ', 299.99, 'imagenes/productos/smartphone.png')">
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="imagenes/productos/laptop.png" alt="Laptop ABC" class="product-image">
+                    <div class="product-info">
+                        <h3>Laptop ABC</h3>
+                        <p class="product-description">Laptop ultradelgada con procesador i7 y 16GB RAM</p>
+                        <p class="product-price">$899.99</p>
+                        <button class="btn-agregar-carrito" 
+                                onclick="return agregarAlCarrito('Laptop ABC', 899.99, 'imagenes/productos/laptop.png')">
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="imagenes/productos/audifonos.png" alt="Audífonos Pro" class="product-image">
+                    <div class="product-info">
+                        <h3>Audífonos Pro</h3>
+                        <p class="product-description">Audífonos inalámbricos con cancelación de ruido</p>
+                        <p class="product-price">$199.99</p>
+                        <button class="btn-agregar-carrito" 
+                                onclick="return agregarAlCarrito('Audífonos Pro', 199.99, 'imagenes/productos/audifonos.png')">
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="imagenes/productos/smartwatch.png" alt="Smartwatch Plus" class="product-image">
+                    <div class="product-info">
+                        <h3>Smartwatch Plus</h3>
+                        <p class="product-description">Reloj inteligente con monitor de actividad y GPS</p>
+                        <p class="product-price">$159.99</p>
+                        <button class="btn-agregar-carrito" 
+                                onclick="return agregarAlCarrito('Smartwatch Plus', 159.99, 'imagenes/productos/smartwatch.png')">
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="imagenes/productos/tablet.png" alt="Tablet Max" class="product-image">
+                    <div class="product-info">
+                        <h3>Tablet Max</h3>
+                        <p class="product-description">Tablet de 10 pulgadas con 64GB de almacenamiento</p>
+                        <p class="product-price">$349.99</p>
+                        <button class="btn-agregar-carrito" 
+                                onclick="return agregarAlCarrito('Tablet Max', 349.99, 'imagenes/productos/tablet.png')">
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="imagenes/productos/camara.png" alt="Cámara Digital" class="product-image">
+                    <div class="product-info">
+                        <h3>Cámara Digital</h3>
+                        <p class="product-description">Cámara DSLR con lente 18-55mm y 24.2MP</p>
+                        <p class="product-price">$499.99</p>
+                        <button class="btn-agregar-carrito" 
+                                onclick="return agregarAlCarrito('Cámara Digital', 499.99, 'imagenes/productos/camara.png')">
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 MiTienda. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
